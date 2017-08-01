@@ -1,15 +1,10 @@
 'use strict';
 
-const Character = require('./main.js');
+const Character = require('./character.js');
 
 module.exports = class Human extends Character {
     constructor() {
         super();
         this.weapon = 'Grenade Luncher';
-    }
-
-    walk() {
-        this.location.x = Math.random();
-        this.location.y = Math.random();
     }
 }
