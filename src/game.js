@@ -8,14 +8,16 @@ module.exports = class Hero extends Character {
         this.weapon = 'AK47';
     }
 
-    forward() {
-        this.walk(1, 0);
+
+}
+module.exports = class Villan extends Character {
+    constructor() {
+        super();
+        this.weapon = 'Grenade Luncher';
     }
 
-    up() {
-        this.walk(0, 1);
+    walk() {
+        this.location.x = Math.random();
+        this.location.y = Math.random();
     }
-
-
-
 }

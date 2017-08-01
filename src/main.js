@@ -19,6 +19,16 @@ module.exports = class Character {
         this.location.y += y;
     }
 
+
+    forward() {
+        this.walk(1, 0);
+    }
+
+    up() {
+        this.walk(0, 1);
+    }
+
+
     shoot() {
         if (this.amo <= 10) {
             return 'Reload!';
