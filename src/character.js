@@ -36,6 +36,7 @@ module.exports = class Character {
             return 'Empty';
         } else {
             this.amo -= 1;
+            return 'Bam Bamm';
         }
     }
 

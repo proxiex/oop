@@ -2,15 +2,7 @@
 
 const Character = require('./main.js');
 
-module.exports = class Hero extends Character {
-    constructor() {
-        super();
-        this.weapon = 'AK47';
-    }
-
-
-}
-module.exports = class Villan extends Character {
+module.exports = class Human extends Character {
     constructor() {
         super();
         this.weapon = 'Grenade Luncher';
